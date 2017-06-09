@@ -16,7 +16,9 @@ using Com.Sinch.Android.Rtc.Messaging;
 using Android.Util;
 using SinchCallDemo.Droid.Helpers;
 using Xamarin.Forms;
+using SinchCallDemo.Droid.InterfaceImplementations;
 
+[assembly: Xamarin.Forms.Dependency(typeof(SinchService))]
 namespace SinchCallDemo.Droid.InterfaceImplementations
 {
     [Service]
@@ -79,7 +81,7 @@ namespace SinchCallDemo.Droid.InterfaceImplementations
             if (mSinchClient == null)
             {
                 mUserId = username;
-                mSinchClient = Sinch.SinchClientBuilder.Context(ApplicationContext).UserId(username)
+                mSinchClient = Sinch.SinchClientBuilder.Context(Forms.Context).UserId(username)
                         .ApplicationKey(APP_KEY)
                         .ApplicationSecret(APP_SECRET)
                         .EnvironmentHost(ENVIRONMENT).Build();
@@ -87,7 +89,7 @@ namespace SinchCallDemo.Droid.InterfaceImplementations
                 mSinchClient.SetSupportCalling(true);
                 mSinchClient.SetSupportMessaging(true);
                 mSinchClient.SetSupportPushNotifications(true);
-                mSinchClient.SetSupportManagedPush(true);
+                //mSinchClient.SetSupportManagedPush(true);
                 mSinchClient.SetSupportActiveConnectionInBackground(true);
                 mSinchClient.StartListeningOnActiveConnection();
 
@@ -98,6 +100,7 @@ namespace SinchCallDemo.Droid.InterfaceImplementations
                 mSinchClient.MessageClient.AddMessageClientListener(new SinchMessageClientListener(this));
 
                 mSinchClient.Start();
+                Log.Debug(TAG, "Started1!!!!!!!!!!!!!!!!!!!!!11");
             }
         }
 

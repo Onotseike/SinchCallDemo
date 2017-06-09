@@ -14,7 +14,6 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SinchCallDemo\SinchCallDemo\SinchCallDemo.projitems*{a852c814-78df-4320-8de8-0e88f2931fc5}*SharedItemsImports = 4
-		SinchCallDemo\SinchCallDemo\SinchCallDemo.projitems*{bb97f301-eab3-433d-bb33-1c2b0cc23804}*SharedItemsImports = 4
 		SinchCallDemo\SinchCallDemo\SinchCallDemo.projitems*{bcaec985-ac81-41fe-9b29-675b878eda2d}*SharedItemsImports = 4
 		SinchCallDemo\SinchCallDemo\SinchCallDemo.projitems*{bfdf3e47-085d-455d-a35c-761872759957}*SharedItemsImports = 13
 	EndGlobalSection
