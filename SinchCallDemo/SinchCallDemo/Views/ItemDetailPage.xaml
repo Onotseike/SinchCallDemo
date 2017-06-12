@@ -11,6 +11,7 @@
             HorizontalOptions="Center"
             VerticalOptions="CenterAndExpand"
             Clicked="ClickedButton" />
+        
         <Button Text="Click Me!"
             HorizontalOptions="Center"
             VerticalOptions="CenterAndExpand"

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SinchCallDemo.Views.ReciepientPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Entry x:Name="reciepientName"
+                   TextColor="Purple"
+                   Placeholder="Enter Receipient Name"/>
+            <Button x:Name="callVoiceBtn"
+                    TextColor="Beige"
+                    FontSize="Medium"
+                    Text="Call Voice"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Purple"/>
+            <Button x:Name="callVideoBtn"
+                    TextColor="Beige"
+                    FontSize="Medium"
+                    Text="Call Video"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Purple"/>
+            <Button x:Name="msgBtn"
+                    TextColor="Beige"
+                    FontSize="Medium"
+                    Text="IM"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Purple"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

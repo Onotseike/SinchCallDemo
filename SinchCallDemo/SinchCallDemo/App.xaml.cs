@@ -37,7 +37,7 @@ namespace SinchCallDemo
 
         public static void SetPage()
         {
-            Current.MainPage = new ItemDetailPage();
+            Current.MainPage = new ReciepientPage();
         }
 	}
 }
